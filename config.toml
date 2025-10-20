@@ -9,7 +9,8 @@ theme = "terminal"   # important
 
 [params]
   description = "Engineer • Maker • Problem Solver"
-  themeColor = "green"
+  themeColor = "blue"   # green, blue, red, orange, pink
+  # fullWidthTheme = true
 
 [menu]
   [[menu.main]]

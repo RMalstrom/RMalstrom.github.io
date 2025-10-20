@@ -6,6 +6,14 @@
     <description>Recent content in Home on My Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ender-7 Speed Upgrade</title>
+      <link>http://localhost:1313/projects/ender7-upgrade/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ender7-upgrade/</guid>
+      <description>Linear rails, tuned accel, and cleaner harnessing.</description>
+    </item>
   </channel>
 </rss>
