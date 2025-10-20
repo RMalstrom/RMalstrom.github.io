@@ -1,9 +1,9 @@
-baseURL = "https://<your-username>.github.io/"   # or ".../<repo>/" for project pages
+baseURL = "https://rmalstrom.github.io/"   # or add /repo/ if not a user site
 languageCode = "en-us"
 title = "My Portfolio"
 paginate = 10
 
-theme = "terminal"   # <— use this when the theme is inside /themes
+theme = "terminal"   # important
 
 [params]
   description = "Engineer • Maker • Problem Solver"
