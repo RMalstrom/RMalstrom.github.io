@@ -1,7 +1,9 @@
 baseURL = "https://rmalstrom.github.io/"   # or add /repo/ if not a user site
 languageCode = "en-us"
 title = "My Portfolio"
-paginate = 10
+
+[pagination]
+  pagerSize = 10
 
 theme = "terminal"   # important
 
