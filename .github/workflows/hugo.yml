@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]   # change to "master" if that's your default branch
   workflow_dispatch:
 
 permissions:
@@ -26,16 +26,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Setup Go (for Hugo Modules)
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
 
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: 'stable'
+      # This line creates/updates go.sum based on your config/module imports
+      - name: Resolve Hugo Modules
+        run: hugo mod tidy
 
       - name: Build
         run: hugo --minify
