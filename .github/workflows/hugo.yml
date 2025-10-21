@@ -32,9 +32,9 @@ jobs:
           go-version: 'stable'
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.151.2'
           extended: true
 
       # This line creates/updates go.sum based on your config/module imports
@@ -59,3 +59,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  
