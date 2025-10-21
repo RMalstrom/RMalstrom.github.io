@@ -1,5 +1,7 @@
 name: Deploy Hugo site to Pages
 
+  
+
 on:
   push:
     branches: [ "main" ]   # change to "master" if that's your default branch
@@ -39,7 +41,10 @@ jobs:
 
       # This line creates/updates go.sum based on your config/module imports
       - name: Resolve Hugo Modules
-        run: hugo mod tidy
+        run: |
+          hugo mod get -u ./...
+          hugo mod tidy
+
 
       - name: Build
         run: hugo --minify
