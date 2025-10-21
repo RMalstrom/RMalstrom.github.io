@@ -5,12 +5,17 @@ title = "My Portfolio"
 [pagination]
   pagerSize = 10
 
-theme = "terminal"   # important
+theme = "Terminal"   # important
+
+[markup.highlight]
+  noClasses = false   # required so the theme's Chroma styles apply
+
 
 [params]
   description = "Engineer • Maker • Problem Solver"
   themeColor = "blue"   # green, blue, red, orange, pink
   # fullWidthTheme = true
+  contentTypeName = "posts"
 
 [menu]
   [[menu.main]]

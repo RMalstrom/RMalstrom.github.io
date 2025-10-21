@@ -1,3 +1,9 @@
-{{ if .Get "src" }}
-<img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} {{ with .Get "width" }} width="{{ . | plainify }}" {{ end }} {{ with .Get "height" }} height="{{ . | plainify }}" {{ end }} />
-{{ end }}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $pos := .Get "position" | default "" -}}
+{{- $style := .Get "style" | default "" -}}
+
+<figure {{ if $pos }}class="align-{{ $pos }}"{{ end }}>
+  <img src="{{ $src }}" alt="{{ $alt }}" {{ if $style }}style="{{ $style }}"{{ end }}>
+  {{- with .Inner }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>
