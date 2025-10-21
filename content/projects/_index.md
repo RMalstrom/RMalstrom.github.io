@@ -1,4 +1,6 @@
 ---
 title: "Projects"
+description: "Selected builds and experiments."
 ---
-Welcome to my Projects!
+
+Below are a few things I’ve built or documented recently.

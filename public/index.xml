@@ -6,14 +6,28 @@
     <description>Recent content in Home on Ricky Malstrom</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ender-7 Speed Upgrade</title>
+      <title>S7-1200 Lab Tips</title>
+      <link>http://localhost:1313/posts/s7-1200-lab-tips/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/s7-1200-lab-tips/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Verify commons and 24V mapping early&lt;/li&gt;&#xA;&lt;li&gt;Use rising-edge (positive) triggers for toggles&lt;/li&gt;&#xA;&lt;li&gt;Document I/O map and include photos in the appendix&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Ender 7: Hotend &amp; Speed Upgrade</title>
       <link>http://localhost:1313/projects/ender7-upgrade/</link>
-      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ender7-upgrade/</guid>
-      <description>Linear rails, tuned accel, and cleaner harnessing.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; reduce print time while keeping quality.&lt;br&gt;&#xA;&lt;strong&gt;Upgrades:&lt;/strong&gt; HeroMe Gen7 hotend, tuned input shaper, adaptive mesh.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;0.28 mm layer “draft” profile: ~2.1× speedup&lt;/li&gt;&#xA;&lt;li&gt;Benchy in ~28 minutes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/ender7/benchy.jpg&#34;  alt=&#34;Benchy&#34;  class=&#34;left&#34;    /&gt;&#xA;&#xA;&#xA;&lt;h3 id=&#34;notes&#34;&gt;Notes&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Orca Slicer: high-flow filament profiles&lt;/li&gt;&#xA;&lt;li&gt;Klipper: &lt;code&gt;Mainsail&lt;/code&gt; graphs helped tune accel limits&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Minecraft Jukebox: Wireless Speaker</title>
+      <link>http://localhost:1313/projects/wireless-jukebox-speaker/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wireless-jukebox-speaker/</guid>
+      <description>&lt;p&gt;An ESP32-powered Bluetooth speaker inside a 3D-printed Minecraft jukebox case.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Class-D amp module (3–5 W)&lt;/li&gt;&#xA;&lt;li&gt;18650 w/ BMS&lt;/li&gt;&#xA;&lt;li&gt;Printed shell in PLA with wood-like texture&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/jukebox/final.jpg&#34;  alt=&#34;Jukebox speaker&#34;  class=&#34;left&#34;    /&gt;</description>
     </item>
   </channel>
 </rss>

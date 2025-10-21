@@ -1,16 +1,22 @@
 ---
-title: "Ender-7 Speed Upgrade"
-date: 2025-10-19
-tags: ["3D printing", "Klipper"]
-summary: "Linear rails, tuned accel, and cleaner harnessing."
+title: "Ender 7: Hotend & Speed Upgrade"
+date: 2025-10-10
+description: "HeroMe Gen7 hotend, higher flow, faster PLA profiles."
+tags: ["3d-printing", "klipper", "hardware"]
+categories: ["Hardware"]
+# If you want an external link button:
+# external_url: "https://github.com/yourrepo/ender7-upgrade"
 ---
 
-{{< image src="/img/ender7.jpg" alt="Ender-7 after rail mod" position="center" style="border-radius:12px;" >}}
+**Goal:** reduce print time while keeping quality.  
+**Upgrades:** HeroMe Gen7 hotend, tuned input shaper, adaptive mesh.
 
-## Notes
-- Rails on X/Y, belt path cleaned up, resonance tuned.
+### Results
+- 0.28 mm layer “draft” profile: ~2.1× speedup
+- Benchy in ~28 minutes
 
-{{< code language="ini" title="Klipper: input shaper snippet" open="true" >}}
-[resonance_tester]
-accel_chip: adxl345
-{{< /code >}}
+{{< image src="/images/projects/ender7/benchy.jpg" alt="Benchy" caption="Draft Benchy after tuning" >}}
+
+### Notes
+- Orca Slicer: high-flow filament profiles
+- Klipper: `Mainsail` graphs helped tune accel limits
