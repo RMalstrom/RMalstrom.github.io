@@ -1,44 +1,30 @@
+# ----------------------------
+# Basic site settings
+# ----------------------------
 baseURL = "https://rmalstrom.github.io/"
 title = "Ricky Malstrom"
-# Remove this if you’re using modules:
-# theme = "terminal"
+languageCode = "en-us"
+paginate = 10
+enableRobotsTXT = true
 
+# ----------------------------
+# Use the Terminal theme via Hugo Modules
+# (Do NOT also set `theme = "terminal"`)
+# ----------------------------
 [module]
   [[module.imports]]
     path = "github.com/panr/hugo-theme-terminal/v4"
 
-# Optional but helps on Pages if you still get missing CSS:
-# relativeURLs = true
-# canonifyURLs = true
-
-[pagination]
-  pagerSize = 10
-
-theme = "Terminal"   # important
-
-[markup.highlight]
-  noClasses = false   # required so the theme's Chroma styles apply
-
-
+# ----------------------------
+# Theme params (safe defaults)
+# ----------------------------
 [params]
-  description = "Engineer • Maker • Problem Solver"
-  themeColor = "blue"   # green, blue, red, orange, pink
-  # fullWidthTheme = true
-  contentTypeName = "posts"
+  # These are Terminal theme options; adjust later if you want
+  centerTheme = true
+  showMenuItems = 5
+  # choose one of: "orange", "blue", "red", "green", "pink", "yellow"
+  themeColor = "blue"
 
+# If your menu is empty, this block can be omitted.
+# Keeping it blank is harmless and valid TOML.
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 1
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
-
-  [module]
-  [[module.imports]]
-    path = "github.com/panr/hugo-theme-terminal/v4"
-
