@@ -4,7 +4,10 @@
 baseURL = "https://rmalstrom.github.io/"
 title = "Ricky Malstrom"
 languageCode = "en-us"
-paginate = 10
+
+[pagination]
+  pagerSize = 10
+
 enableRobotsTXT = true
 
 # ----------------------------
