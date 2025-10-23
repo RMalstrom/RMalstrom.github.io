@@ -47,7 +47,7 @@ jobs:
 
 
       - name: Build
-        run: hugo --minify
+        run: hugo --cleanDestinationDir --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
