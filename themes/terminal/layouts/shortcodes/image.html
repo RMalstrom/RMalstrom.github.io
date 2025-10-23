@@ -1,9 +1,0 @@
-{{- $src := .Get "src" -}}
-{{- $alt := .Get "alt" | default "" -}}
-{{- $pos := .Get "position" | default "" -}}
-{{- $style := .Get "style" | default "" -}}
-
-<figure {{ if $pos }}class="align-{{ $pos }}"{{ end }}>
-  <img src="{{ $src }}" alt="{{ $alt }}" {{ if $style }}style="{{ $style }}"{{ end }}>
-  {{- with .Inner }}<figcaption>{{ . }}</figcaption>{{ end -}}
-</figure>

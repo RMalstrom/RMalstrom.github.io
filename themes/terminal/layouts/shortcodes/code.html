@@ -1,8 +1,0 @@
-{{- $lang := .Get "language" | default "" -}}
-{{- $title := .Get "title" -}}
-{{- $open := .Get "open" | default "false" -}}
-
-<div class="code {{ if eq (lower $open) "true" }}open{{ end }}">
-  {{ with $title }}<div class="code-title">{{ . }}</div>{{ end }}
-  <pre><code{{ if $lang }} class="language-{{ $lang }}"{{ end }}>{{ .Inner | htmlEscape }}</code></pre>
-</div>
