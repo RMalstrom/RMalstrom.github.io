@@ -6,14 +6,14 @@
     <description>Recent content in Hardware on Ricky Malstrom</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ender 7: Hotend &amp; Speed Upgrade</title>
+      <title>Ender 7 Speed Upgrade Project</title>
       <link>http://localhost:1313/projects/ender7-upgrade/</link>
-      <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ender7-upgrade/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Goal:&lt;/strong&gt; reduce print time while keeping quality.&lt;br&gt;&#xA;&lt;strong&gt;Upgrades:&lt;/strong&gt; HeroMe Gen7 hotend, tuned input shaper, adaptive mesh.&lt;/p&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;0.28 mm layer “draft” profile: ~2.1× speedup&lt;/li&gt;&#xA;&lt;li&gt;Benchy in ~28 minutes&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/ender7/benchy.jpg&#34;  alt=&#34;Benchy&#34;  class=&#34;left&#34;    /&gt;&#xA;&#xA;&#xA;&lt;h3 id=&#34;notes&#34;&gt;Notes&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Orca Slicer: high-flow filament profiles&lt;/li&gt;&#xA;&lt;li&gt;Klipper: &lt;code&gt;Mainsail&lt;/code&gt; graphs helped tune accel limits&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;-objective&#34;&gt;🎯 Objective&lt;/h2&gt;&#xA;&lt;p&gt;Increase print speed without compromising surface quality on the Ender 7.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-tools--setup&#34;&gt;⚙️ Tools &amp;amp; Setup&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Ender 7, Sonic Pad (Klipper)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software:&lt;/strong&gt; Orca Slicer, Fusion 360&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mods:&lt;/strong&gt; HeroMe Gen7 hotend, dual-gear extruder&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-process&#34;&gt;🧠 Process&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Modeled the hotend in CAD for airflow optimization&lt;/li&gt;&#xA;&lt;li&gt;Tuned Klipper’s input-shaper and pressure-advance&lt;/li&gt;&#xA;&lt;li&gt;Measured overhang quality using standardized test models&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;-results&#34;&gt;📊 Results&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Metric&lt;/th&gt;&#xA;          &lt;th&gt;Before&lt;/th&gt;&#xA;          &lt;th&gt;After&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Benchy Time&lt;/td&gt;&#xA;          &lt;td&gt;53 min&lt;/td&gt;&#xA;          &lt;td&gt;26 min&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Quality&lt;/td&gt;&#xA;          &lt;td&gt;7/10&lt;/td&gt;&#xA;          &lt;td&gt;9/10&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-gallery&#34;&gt;🖼️ Gallery&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/ender7/benchy.jpg&#34;  alt=&#34;Benchy print&#34;  class=&#34;left&#34;    /&gt;&#xA;&#xA;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/ender7/setup.jpg&#34;  alt=&#34;Benchy print&#34;  class=&#34;left&#34;    /&gt;&#xA;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
