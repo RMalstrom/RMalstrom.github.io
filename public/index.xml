@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Ricky Malstrom</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Ricky Malstrom</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 13:35:51 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Tue, 21 Oct 2025 13:35:51 -0400</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ender 7 Speed Upgrade Project</title>
+      <link>http://localhost:1313/projects/ender7-upgrade/</link>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ender7-upgrade/</guid>
+      <description>&lt;h2 id=&#34;-objective&#34;&gt;🎯 Objective&lt;/h2&gt;&#xA;&lt;p&gt;Increase print speed without compromising surface quality on the Ender 7.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-tools--setup&#34;&gt;⚙️ Tools &amp;amp; Setup&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hardware:&lt;/strong&gt; Ender 7, Sonic Pad (Klipper)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software:&lt;/strong&gt; Orca Slicer, Fusion 360&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mods:&lt;/strong&gt; HeroMe Gen7 hotend, dual-gear extruder&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-process&#34;&gt;🧠 Process&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Modeled the hotend in CAD for airflow optimization&lt;/li&gt;&#xA;&lt;li&gt;Tuned Klipper’s input-shaper and pressure-advance&lt;/li&gt;&#xA;&lt;li&gt;Measured overhang quality using standardized test models&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;-results&#34;&gt;📊 Results&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Metric&lt;/th&gt;&#xA;          &lt;th&gt;Before&lt;/th&gt;&#xA;          &lt;th&gt;After&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Benchy Time&lt;/td&gt;&#xA;          &lt;td&gt;53 min&lt;/td&gt;&#xA;          &lt;td&gt;26 min&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Quality&lt;/td&gt;&#xA;          &lt;td&gt;7/10&lt;/td&gt;&#xA;          &lt;td&gt;9/10&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;-gallery&#34;&gt;🖼️ Gallery&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/ender7/benchy.jpg&#34;  alt=&#34;Benchy print&#34;  class=&#34;left&#34;    /&gt;&#xA;&#xA;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/ender7/setup.jpg&#34;  alt=&#34;Benchy print&#34;  class=&#34;left&#34;    /&gt;&#xA;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>S7-1200 Lab Tips</title>
+      <link>http://localhost:1313/posts/s7-1200-lab-tips/</link>
+      <pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/s7-1200-lab-tips/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Verify commons and 24V mapping early&lt;/li&gt;&#xA;&lt;li&gt;Use rising-edge (positive) triggers for toggles&lt;/li&gt;&#xA;&lt;li&gt;Document I/O map and include photos in the appendix&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Minecraft Jukebox: Wireless Speaker</title>
+      <link>http://localhost:1313/projects/wireless-jukebox-speaker/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wireless-jukebox-speaker/</guid>
+      <description>&lt;p&gt;An ESP32-powered Bluetooth speaker inside a 3D-printed Minecraft jukebox case.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Class-D amp module (3–5 W)&lt;/li&gt;&#xA;&lt;li&gt;18650 w/ BMS&lt;/li&gt;&#xA;&lt;li&gt;Printed shell in PLA with wood-like texture&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/images/projects/jukebox/final.jpg&#34;  alt=&#34;Jukebox speaker&#34;  class=&#34;left&#34;    /&gt;</description>
+    </item>
+  </channel>
+</rss>
