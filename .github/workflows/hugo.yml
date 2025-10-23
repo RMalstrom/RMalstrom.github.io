@@ -42,6 +42,7 @@ jobs:
       # This line creates/updates go.sum based on your config/module imports
       - name: Resolve Hugo Modules
         run: |
+          hugo mod clean
           hugo mod get -u ./...
           hugo mod tidy
 
