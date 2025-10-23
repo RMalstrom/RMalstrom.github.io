@@ -25,7 +25,7 @@ enableRobotsTXT = true
   # These are Terminal theme options; adjust later if you want
   centerTheme = true
   showMenuItems = 5
-  # choose one of: "orange", "blue", "red", "green", "pink", "yellow"
+  # choose one of: "blue", "red", "green", "pink", "yellow"
   themeColor = "blue"
   subtitle = "Mechatronics student • 3D printing nerd • Maker"
 
