@@ -1,31 +1,5 @@
-/* Force blue theme for Hugo Terminal */
 :root {
-  /* core */
-  --background: #0b1020;      /* deep navy */
-  --foreground: #e6ecff;      /* soft off-white */
-  --accent:     #4da3ff;      /* primary accent */
-  --muted:      #a9b8d6;
-  --borderColor:#1a2340;
-  --linkColor:  var(--accent);
-  --linkHover:  #99c9ff;
-
-  /* selections & code */
-  --selection:  rgba(77,163,255,0.25);
-  --inlineCode: #d2d9ff;
-
-  /* syntax-ish helpers (theme uses some of these) */
-  --red:    #ff6b6b;
-  --green:  #2ed573;
-  --yellow: #ffd166;
-  --blue:   #4da3ff;
-  --purple: #b197fc;
-  --cyan:   #5ad6ff;
-  --orange: #ff9f43;
+  --background: #0e1923;
+  --foreground: #d6e8ee;
+  --accent: #5accf0;
 }
-
-/* small tweaks so buttons/headers contrast well */
-.button,
-.read-more.button {
-  border-color: var(--accent);
-}
-a:hover { color: var(--linkHover); }
