@@ -29,6 +29,11 @@ enableRobotsTXT = true
   themeColor = "blue"
   subtitle = "Mechatronics student • 3D printing nerd • Maker"
 
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+
 # If your menu is empty, this block can be omitted.
 # Keeping it blank is harmless and valid TOML.
 [menu]
