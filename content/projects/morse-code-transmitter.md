@@ -1,6 +1,6 @@
 ---
 title: "ESP-32 Optical Morse Code Transceiver"
-date: 2-2-2026
+date: 2026-2-2
 description: "An optical communication system using LEDs and photoresistors to transmit and decode Morse code in real time."
 tags: ["ESP32", "embedded systems", "signal processing", "Morse code", "electronics", "microcontrollers"]
 categories: ["Embedded Systems", "Electronics"]
@@ -34,4 +34,3 @@ break down user input into morse code and then transmit it and print out the mes
 - **GitHub:** https://github.com/RMalstrom/Optical-Morse-Code-Transceiver
 - **STL/CAD:** `/files/ender7_herome.zip`
 
----
