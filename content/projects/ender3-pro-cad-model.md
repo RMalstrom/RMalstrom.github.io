@@ -1,5 +1,5 @@
 ---
-title: "CAD Final Projet"
+title: "CAD Final Project"
 date: 2025-11-15
 description: "Modelling a fully accurate Ender 3 Pro in Autodesk Inventor"
 tags: ["3D printing", "Inventor", "CAD", "engineering"]

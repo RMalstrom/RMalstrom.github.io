@@ -1,6 +1,6 @@
 ---
 title: "ESP-32 Optical Morse Code Transceiver"
-date: 2026-2-2
+date: 2026-02-02
 description: "An optical communication system using LEDs and photoresistors to transmit and decode Morse code in real time."
 tags: ["ESP32", "embedded systems", "signal processing", "Morse code", "electronics", "microcontrollers"]
 categories: ["Embedded Systems", "Electronics"]
