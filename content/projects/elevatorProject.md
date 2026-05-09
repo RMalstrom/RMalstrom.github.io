@@ -3,10 +3,10 @@ title: "ElevatorProject"
 date: 2026-05-09T00:10:12-04:00
 draft: false
 description: ""
-tags: []
+tags: [CAD, Arduino]
 categories: []
-cover: ""
-external_url: ""
+cover: "/images/projects/elevatorProject/elevatorAssemblyExploded.jpg"
+external_url: "https://github.com/RMalstrom/Elevator-Project"
 ---
 
 ## 🎯 Objective

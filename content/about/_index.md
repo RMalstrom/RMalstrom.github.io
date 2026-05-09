@@ -5,23 +5,23 @@ title: "About"
 ## Hey, I’m Ricky 👋
 
 I’m a Mechatronics Engineering Technology student at PennWest California.  
-I tinker with **3D printers** (Ender 7, Bambu X1C, Ender-3 Pro), CAD (Inventor/Onshape), and **embedded** (Arduino/ESP32/KiCad).
+I tinker with **3D printers** (Ender 7, Bambu X1C, Ender-3 Pro), CAD (Inventor/Onshape), and **embedded systems** (Arduino/ESP32/KiCad).
 
 ### What I do
-- 3D print design (PLA, fast-print tuning w/ Klipper & Orca)
+- 3D print design (Klipper printer tuning, Slicer optimization)
+- CAD modeling and creating drawings
 - Electronics prototyping (sensors, stepper control, power)
-- Web tooling and automation (Hugo + GitHub Pages)
+- PLC programming Allen Bradley and Siemens (S7-1200)
 
 ### Skills at a glance
-- **CAD**: Inventor, Onshape
-- **Manufacturing**: processes, material behavior, lab writeups
-- **Electronics**: KiCad, basic PCB/soldering, oscilloscopes
-- **Code**: Python, C/C++ (Arduino/ESP32), a bit of JS
+- **CAD**: Autodesk Inventor, Onshape, Fusion 360
+- **Manufacturing**: 3D Printers, Laser Engravers, ~Machining
+- **Electronics**: KiCad (Basic PCB design), soldering, Circuit testing
+- **Code**: Python, Java, C/C++ (Arduino/ESP32), Ladder Logic (Allen Bradley & Siemens)
 
 ### Currently learning
-- Better Klipper macros + slicer automation
-- Pricing + workflows for a small 3D-printing shop
+- Better Arduino programming
 
 ### Contact
-- Email: <quigley_e@pennwest.edu> (example—replace with yours)
+- Email: <maldev@proton.me>
 - GitHub: <https://github.com/RMalstrom>
