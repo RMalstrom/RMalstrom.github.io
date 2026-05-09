@@ -2,7 +2,7 @@
 title: "ElevatorProject"
 date: 2026-05-09T00:10:12-04:00
 draft: false
-description: ""
+description: "For Principles of Automatic Control as a final project. It is powered by an Arduino UNO and made up of aluminum extrusions and 3D printed parts. "
 tags: [CAD, Arduino]
 categories: []
 cover: "/images/projects/elevatorProject/elevatorAssemblyExploded.jpg"
