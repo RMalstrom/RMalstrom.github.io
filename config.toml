@@ -3,7 +3,7 @@
 # ----------------------------
 baseURL = "https://rmalstrom.github.io/"
 title = "Ricky Malstrom"
-languageCode = "en-us"
+locale = "en-us"
 
 [pagination]
   pagerSize = 10
