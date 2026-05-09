@@ -1,0 +1,15 @@
+/* Custom color override for the Terminal theme.
+   Loaded via layouts/partials/extended_head.html after the theme's CSS,
+   so these values win the cascade. */
+
+:root {
+  --background: #0e1923;
+  --foreground: #d6e8ee;
+  --accent: #5accf0;
+}
+
+body {
+  --background: #0e1923;
+  --foreground: #d6e8ee;
+  --accent: #5accf0;
+}
