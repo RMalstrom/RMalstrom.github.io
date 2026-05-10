@@ -28,6 +28,7 @@ enableRobotsTXT = true
   # choose one of: "blue", "red", "green", "pink", "yellow"
   themeColor = "blue"
   subtitle = "Mechatronics student • 3D printing nerd • Maker"
+  mainSections = ["projects"]
 
 [markup]
   [markup.goldmark.renderer]
