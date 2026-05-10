@@ -1,15 +1,28 @@
 ---
-title: "Minecraft Jukebox: Wireless Speaker"
+title: "Minecraft Jukebox Bluetooth Speaker"
 date: 2025-03-25
+draft: true
 description: "A Bluetooth speaker disguised as a Minecraft jukebox."
-tags: ["electronics", "3d-printing", "audio"]
-categories: ["Electronics"]
+tags: [ESP32-powered]
+categories: [ESP-32]
+cover: ""
+external_url: ""
 ---
 
-An ESP32-powered Bluetooth speaker inside a 3D-printed Minecraft jukebox case.
+## 🎯 Objective
 
-- Class-D amp module (3–5 W)
-- 18650 w/ BMS
-- Printed shell in PLA with wood-like texture
 
-{{< image src="/images/projects/jukebox/final.jpg" alt="Jukebox speaker" caption="Final assembly" >}}
+## ⚙️ Tools & Setup
+- **Hardware: Class-D amp module (3–5 W), 18650 w/ BMS**
+- **Software: Arduino IDE**
+
+## 🧠 Process
+1.
+2.
+3.
+
+## 📊 Results
+
+
+## 🔗 Files & Source
+- **GitHub:**

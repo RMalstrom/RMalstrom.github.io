@@ -1,15 +1,38 @@
 /* Custom color override for the Terminal theme.
    Loaded via layouts/partials/extended_head.html after the theme's CSS,
    so these values win the cascade. */
-
 :root {
   --background: #0e1923;
   --foreground: #d6e8ee;
   --accent: #5accf0;
 }
-
 body {
   --background: #0e1923;
   --foreground: #d6e8ee;
   --accent: #5accf0;
+}
+
+/* ---------------------------------------------------------------
+   Cover image sizing
+   --------------------------------------------------------------- */
+
+.posts .post img[title="Cover Image"] {
+  max-width: 300px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  object-fit: cover;
+}
+
+.post-content img[title="Cover Image"],
+article img[title="Cover Image"] {
+  max-width: 500px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  object-fit: contain;
 }
