@@ -17,6 +17,7 @@ external_url: "https://github.com/RMalstrom/Elevator-Project"
 
 ## ⚙️ Tools & Setup
 - **Hardware: Arduino Uno**
+- **Mechanical: Aluminum Extrusions, Printed Parts (PLA)**
 - **Software: Arduino IDE, Autodesk Inventor**
 
 ## 🧠 Process
@@ -34,6 +35,7 @@ external_url: "https://github.com/RMalstrom/Elevator-Project"
               style="width: 100%; max-width: 800px; height: 500px; margin: 1rem 0;">
 </model-viewer>
 
+{{< youtube bFx3aDvQiBA >}}
+
 ## 🔗 Files & Source
-- **GitHub:**
-- **Report:**
+- **GitHub: https://github.com/RMalstrom/modelElevatorProject** 
