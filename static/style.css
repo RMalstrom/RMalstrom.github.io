@@ -28,8 +28,8 @@ body {
 
 .post-content img[title="Cover Image"],
 article img[title="Cover Image"] {
-  max-width: 500px;
-  max-height: 300px;
+  max-width: 100%;
+  max-height: 600px;
   width: auto;
   height: auto;
   display: block;
