@@ -5,27 +5,19 @@ draft: false
 description: "For Principles of Automatic Control as a final project. It is powered by an Arduino UNO and made up of aluminum extrusions and 3D printed parts."
 tags: [CAD, Arduino]
 categories: []
+tech: ["Arduino Uno", "Autodesk Inventor", "Arduino IDE"]
 cover: "/images/projects/elevatorProject/elevatorAssemblyExploded.jpg"
-external_url: "https://github.com/RMalstrom/Elevator-Project"
+external_url: "https://github.com/RMalstrom/modelElevatorProject"
 ---
 
- 
 <!--more-->
 
-## 🎯 Objective
+## Tools & Setup
+- **Hardware:** Arduino Uno
+- **Mechanical:** Aluminum extrusions, printed parts (PLA)
+- **Software:** Arduino IDE, Autodesk Inventor
 
-
-## ⚙️ Tools & Setup
-- **Hardware: Arduino Uno**
-- **Mechanical: Aluminum Extrusions, Printed Parts (PLA)**
-- **Software: Arduino IDE, Autodesk Inventor**
-
-## 🧠 Process
-1. 
-2.
-3.
-
-## 📊 Results
+## Results
 
 <model-viewer src="/models/elevatorAssembly.glb"
               alt="Model Elevator CAD Model"
@@ -37,5 +29,5 @@ external_url: "https://github.com/RMalstrom/Elevator-Project"
 
 {{< youtube bFx3aDvQiBA >}}
 
-## 🔗 Files & Source
-- **GitHub: https://github.com/RMalstrom/modelElevatorProject** 
+## Files & Source
+- **GitHub:** [RMalstrom/modelElevatorProject](https://github.com/RMalstrom/modelElevatorProject)

@@ -4,33 +4,26 @@ date: 2026-02-02
 description: "An optical communication system using LEDs and photoresistors to transmit and decode Morse code in real time."
 tags: ["ESP32", "embedded systems", "signal processing", "Morse code", "electronics", "microcontrollers"]
 categories: ["Embedded Systems", "Electronics"]
-external_url: "https://github.com/RMalstrom/Optical-Morse-Code-Transceiver"   # optional (GitHub repo, demo video, etc.)
+tech: ["ESP32", "Arduino IDE", "Autodesk Inventor"]
+external_url: "https://github.com/RMalstrom/Optical-Morse-Code-Transceiver"
 ---
 
-## 🎯 Objective
-Build embedded systems experience by creating a simple optical transmitter and reciever. To demonstrate the system,
-break down user input into morse code and then transmit it and print out the message. 
+## Objective
+Build embedded systems experience by creating a simple optical transmitter
+and receiver. To demonstrate the system, break down user input into Morse
+code, then transmit it and print out the decoded message.
 
-## ⚙️ Tools & Setup
-- **Hardware:** 2x ESP-32, Photoresistor, 220Ω Resistor, LED, 3D Printed Holder, Jumper Wires
+## Tools & Setup
+- **Hardware:** 2x ESP-32, photoresistor, 220Ω resistor, LED, 3D printed holder, jumper wires
 - **Software:** Arduino IDE, Autodesk Inventor
 
-## 🧠 Process
-1. Drew up plans including rough wiring diagram, and morse code key.
-2. Assembled the transmitter module.
-3. Programmed the transmitter module.
-4. Assembled the reciever module.
-5. Programmed the reciever module.
-6. Tested the full system/Fixed Bugs
+## Process
+1. Drew up plans, including a rough wiring diagram and Morse code key
+2. Assembled the transmitter module
+3. Programmed the transmitter module
+4. Assembled the receiver module
+5. Programmed the receiver module
+6. Tested the full system and fixed bugs
 
-
-## 📊 Results
-[MISSING]
-
-## 🖼️ Gallery
-
-
-## 🔗 Files & Source
-- **GitHub:** https://github.com/RMalstrom/Optical-Morse-Code-Transceiver
-- **STL/CAD:** `/files/ender7_herome.zip`
-
+## Files & Source
+- **GitHub:** [RMalstrom/Optical-Morse-Code-Transceiver](https://github.com/RMalstrom/Optical-Morse-Code-Transceiver)

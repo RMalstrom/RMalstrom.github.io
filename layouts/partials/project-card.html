@@ -1,0 +1,29 @@
+{{/* Expects "." to be a project Page */}}
+<article class="project-card">
+  {{ with .Params.cover }}
+    <a href="{{ $.RelPermalink }}" class="project-card__thumb" tabindex="-1" aria-hidden="true">
+      <img src="{{ . | absURL }}" alt="" loading="lazy">
+    </a>
+  {{ end }}
+  <div class="project-card__body">
+    <h3 class="project-card__title">
+      <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+    </h3>
+    {{ if .Description }}
+      <p class="project-card__desc">{{ .Description | markdownify }}</p>
+    {{ end }}
+    {{ if .Params.tech }}
+      <ul class="tech-chips">
+        {{ range .Params.tech }}
+          <li class="tech-chip">{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <div class="project-card__links">
+      <a class="btn btn--primary" href="{{ .RelPermalink }}">View project</a>
+      {{ with .Params.external_url }}
+        <a class="btn btn--outline" href="{{ . }}" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+      {{ end }}
+    </div>
+  </div>
+</article>
