@@ -6,46 +6,20 @@
     </div>
   {{ end }}
 
-  {{/* Show only projects on the homepage, newest first */}}
-  <div class="posts">
-    {{ $projects := where .Site.RegularPages "Section" "projects" }}
-    {{ range $projects.ByDate.Reverse }}
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
-        </h2>
-        <div class="post-meta">
-          {{- if .Date -}}
-            <time class="post-date">
-              {{- partial "post-date" . -}}
-            </time>
-          {{- end -}}
-        </div>
+  {{ $projects := where .Site.RegularPages "Section" "projects" }}
+  {{ $featured := first 3 $projects.ByDate.Reverse }}
 
-        {{ if .Params.tags }}
-          <span class="post-tags">
-            {{ range .Params.tags }}
-            #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
-              {{- . -}}
-            </a>&nbsp;
-            {{ end }}
-          </span>
+  {{ if $featured }}
+    <section class="featured-projects">
+      <div class="section-heading">
+        <h2>Featured Projects</h2>
+        <a class="btn btn--outline" href="/projects/">View all projects&nbsp;→</a>
+      </div>
+      <div class="project-grid">
+        {{ range $featured }}
+          {{ partial "project-card.html" . }}
         {{ end }}
-
-        {{ partial "cover.html" . }}
-
-        <div class="post-content">
-          {{ if .Description }}
-            <p>{{ .Description | markdownify }}</p>
-          {{ else }}
-            {{ .Summary }}
-          {{ end }}
-        </div>
-
-        <div>
-          <a class="read-more button inline" href="{{ .RelPermalink }}">[{{ $.Site.Params.ReadMore | default "Read more" }}]</a>
-        </div>
-      </article>
-    {{ end }}
-  </div>
+      </div>
+    </section>
+  {{ end }}
 {{ end }}

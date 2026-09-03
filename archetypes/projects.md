@@ -5,24 +5,25 @@ draft: true
 description: ""
 tags: []
 categories: []
+tech: []
 cover: ""
 external_url: ""
 ---
 
-## 🎯 Objective
+## Objective
 
 
-## ⚙️ Tools & Setup
+## Tools & Setup
 - **Hardware:**
 - **Software:**
 
-## 🧠 Process
+## Process
 1.
 2.
 3.
 
-## 📊 Results
+## Results
 
 
-## 🔗 Files & Source
+## Files & Source
 - **GitHub:**

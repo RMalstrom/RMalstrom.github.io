@@ -1,38 +1,355 @@
-/* Custom color override for the Terminal theme.
-   Loaded via layouts/partials/extended_head.html after the theme's CSS,
-   so these values win the cascade. */
+/* ==========================================================================
+   Design system — refined dark theme
+   Loaded via layouts/partials/extended_head.html after the theme's own CSS,
+   so these rules win the cascade. The Terminal theme's structural CSS
+   (header/menu/footer/post layout, responsive container) is kept; this file
+   restyles it with a cleaner palette, Inter for UI text (Fira Code stays
+   for code, forced by the theme's own `!important` rules), and adds the
+   project card grid used by the homepage and /projects/.
+   ========================================================================== */
+
 :root {
-  --background: #0e1923;
-  --foreground: #d6e8ee;
-  --accent: #5accf0;
+  --background: #10141a;
+  --surface: #171d26;
+  --surface-hover: #1d2430;
+  --foreground: #e7ebf1;
+  --foreground-muted: rgba(231, 235, 241, 0.68);
+  --border: rgba(231, 235, 241, 0.1);
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --accent-on: #08202c;
+  --radius: 10px;
+  --font-size: 1rem;
+  --line-height: 1.65em;
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+
 body {
-  --background: #0e1923;
-  --foreground: #d6e8ee;
-  --accent: #5accf0;
+  --background: #10141a;
+  --surface: #171d26;
+  --surface-hover: #1d2430;
+  --foreground: #e7ebf1;
+  --foreground-muted: rgba(231, 235, 241, 0.68);
+  --border: rgba(231, 235, 241, 0.1);
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --accent-on: #08202c;
+  --radius: 10px;
+  font-family: var(--font-ui);
 }
 
 /* ---------------------------------------------------------------
-   Cover image sizing
+   Typography
    --------------------------------------------------------------- */
 
-.posts .post img[title="Cover Image"] {
-  max-width: 500px;
-  max-height: 300px;
-  width: auto;
-  height: auto;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+h1 { font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.6rem); font-weight: 800; }
+h2 { font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem); }
+h3 { font-size: 1.2rem; }
+
+p, li {
+  color: var(--foreground);
+}
+
+.post-meta,
+.project-card__desc {
+  color: var(--foreground-muted);
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ---------------------------------------------------------------
+   Header / logo / nav
+   --------------------------------------------------------------- */
+
+.header {
+  padding-bottom: 6px;
+}
+
+.header__logo::after {
+  display: none;
+}
+
+.logo {
+  background: transparent;
+  color: var(--foreground);
+  font-family: var(--font-ui);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  padding: 0;
+}
+
+.navigation-menu__inner > li > a {
+  color: var(--foreground-muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.navigation-menu__inner > li > a:hover {
+  color: var(--foreground);
+  border-bottom-color: var(--accent);
+}
+
+.menu__trigger {
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
+
+.menu__dropdown {
+  border-radius: var(--radius);
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.menu__dropdown > li > a {
+  color: var(--foreground);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.menu__dropdown > li > a:hover {
+  background: var(--surface-hover);
+}
+
+/* ---------------------------------------------------------------
+   Footer
+   --------------------------------------------------------------- */
+
+.footer {
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  opacity: 1;
+  color: var(--foreground-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------------------------------------------------------------
+   Buttons (used by project cards / project detail pages)
+   --------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--accent-on);
+}
+
+.btn--primary:hover {
+  background: var(--accent-strong);
+  transform: translateY(-1px);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--foreground);
+  border-color: var(--border);
+}
+
+.btn--outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* ---------------------------------------------------------------
+   Featured projects section (homepage)
+   --------------------------------------------------------------- */
+
+.featured-projects {
+  margin-top: 20px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------
+   Project grid + cards
+   --------------------------------------------------------------- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
+}
+
+.project-card__thumb {
   display: block;
-  margin: 15px 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--background);
+}
+
+.project-card__thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
   object-fit: cover;
 }
+
+.project-card__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.project-card__title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.project-card__title a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.project-card__title a:hover {
+  color: var(--accent);
+}
+
+.project-card__desc {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.tech-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 0;
+  padding: 0;
+}
+
+.tech-chip {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.tech-chips li::before { content: none !important; }
+
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* ---------------------------------------------------------------
+   Project detail page
+   --------------------------------------------------------------- */
+
+.project__header {
+  margin-bottom: 10px;
+}
+
+.project__title {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project__title::after {
+  display: none;
+}
+
+.project__header .tech-chips {
+  margin: 12px 0 18px;
+}
+
+/* ---------------------------------------------------------------
+   Cover image sizing (project detail pages, via cover.html partial)
+   --------------------------------------------------------------- */
 
 .post-content img[title="Cover Image"],
 article img[title="Cover Image"] {
   max-width: 100%;
-  max-height: 600px;
+  max-height: 480px;
   width: auto;
   height: auto;
   display: block;
   margin: 20px 0;
+  border-radius: var(--radius);
   object-fit: contain;
+}
+
+/* ---------------------------------------------------------------
+   Responsive
+   --------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
