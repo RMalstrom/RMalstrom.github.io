@@ -6,8 +6,14 @@ description: "For Principles of Automatic Control as a final project. It is powe
 tags: [CAD, Arduino]
 categories: []
 tech: ["Arduino Uno", "Autodesk Inventor", "Arduino IDE"]
-cover: "/images/projects/elevatorProject/elevatorAssemblyExploded.jpg"
+cover:
+  image: "/images/projects/elevatorProject/elevatorAssemblyExploded.jpg"
+  alt: "Exploded CAD assembly of the model elevator"
+  hiddenInSingle: true
 external_url: "https://github.com/RMalstrom/modelElevatorProject"
+discipline: "Controls"
+mark: "01"
+model: true
 ---
 
 <!--more-->
@@ -19,13 +25,7 @@ external_url: "https://github.com/RMalstrom/modelElevatorProject"
 
 ## Results
 
-<model-viewer src="/models/elevatorAssembly.glb"
-              alt="Model Elevator CAD Model"
-              camera-controls
-              auto-rotate
-              shadow-intensity="1"
-              style="width: 100%; max-width: 800px; height: 500px; margin: 1rem 0;">
-</model-viewer>
+{{< cad-model src="/models/elevatorAssembly.glb" alt="Model Elevator CAD Model" >}}
 
 {{< youtube bFx3aDvQiBA >}}
 

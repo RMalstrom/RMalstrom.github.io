@@ -6,7 +6,11 @@ description: ""
 tags: []
 categories: []
 tech: []
-cover: ""
+discipline: ""
+model: false
+cover:
+  image: ""
+  alt: ""
 external_url: ""
 ---
 

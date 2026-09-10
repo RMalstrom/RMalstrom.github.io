@@ -1,6 +1,5 @@
 ---
 title: "Projects"
-description: "Selected builds and experiments."
+description: "Mechanical design, embedded systems, and things made to work."
 ---
-
-Below are a few things I’ve built or documented recently.
+Mechanical design, embedded systems, and things made to work. Explore the process, the tools, and the results behind each build.

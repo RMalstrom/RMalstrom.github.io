@@ -5,7 +5,8 @@ draft: true
 description: "A Bluetooth speaker disguised as a Minecraft jukebox."
 tags: [ESP32-powered]
 categories: [ESP-32]
-cover: ""
+cover:
+  image: ""
 external_url: ""
 ---
 

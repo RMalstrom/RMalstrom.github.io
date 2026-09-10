@@ -1,63 +1,68 @@
-# ----------------------------
-# Basic site settings
-# ----------------------------
 baseURL = "https://rmalstrom.github.io/"
 title = "Ricky Malstrom"
-locale = "en-us"
+languageCode = "en-us"
+theme = "PaperMod"
+enableRobotsTXT = true
 
 [pagination]
   pagerSize = 10
 
-enableRobotsTXT = true
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
-# ----------------------------
-# Use the Terminal theme via Hugo Modules
-# (Do NOT also set `theme = "terminal"`)
-# ----------------------------
-[module]
-  [[module.imports]]
-    path = "github.com/panr/hugo-theme-terminal/v4"
-
-# ----------------------------
-# Theme params (safe defaults)
-# ----------------------------
 [params]
-  # These are Terminal theme options; adjust later if you want
-  centerTheme = true
-  showMenuItems = 5
-  # choose one of: "blue", "red", "green", "pink", "yellow"
-  themeColor = "blue"
-  subtitle = "Mechatronics student • 3D printing nerd • Maker"
-  mainSections = ["projects"]
-  ReadMore = "Read more"
+  description = "Mechatronics, CAD, and embedded systems. Projects built and documented by Ricky Malstrom."
+  author = "Ricky Malstrom"
+  mainSections = ["projects", "posts"]
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowReadingTime = true
+  ShowToc = true
+  TocOpen = false
+  DateFormat = "January 2006"
+  [params.label]
+    text = "Ricky Malstrom"
+  [params.assets]
+    favicon = "/favicon.svg"
+    favicon16x16 = "/favicon.svg"
+    favicon32x32 = "/favicon.svg"
+    apple_touch_icon = "/favicon.svg"
+    safari_pinned_tab = "/favicon.svg"
+    disableHLJS = true
+  [params.cover]
+    hiddenInList = true
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/RMalstrom"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:maldev@proton.me"
 
-  [params.logo]
-    logoText = "Ricky Malstrom"
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+  noClasses = false
 
-[markup]
-  [markup.goldmark.renderer]
-    unsafe = true
-
-
-# If your menu is empty, this block can be omitted.
-# Keeping it blank is harmless and valid TOML.
-[menu]
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 1
-
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
-
-  #[[menu.main]]
-    #name = "Posts"
-    #url = "/posts/"
-    #weight = 3
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 4
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 1
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+[[menu.main]]
+  name = "Notes"
+  url = "/posts/"
+  weight = 3
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 4
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 5

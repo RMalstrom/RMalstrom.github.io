@@ -6,6 +6,8 @@ tags: ["ESP32", "embedded systems", "signal processing", "Morse code", "electron
 categories: ["Embedded Systems", "Electronics"]
 tech: ["ESP32", "Arduino IDE", "Autodesk Inventor"]
 external_url: "https://github.com/RMalstrom/Optical-Morse-Code-Transceiver"
+discipline: "Embedded systems"
+mark: "02"
 ---
 
 ## Objective

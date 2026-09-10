@@ -1,7 +1,4 @@
 ---
 title: "Home"
 ---
-
-Hi, I'm **Ricky** — a mechatronics student who loves 3D printing, embedded
-systems, and clean documentation. This site hosts the projects I've built
-and documented.
+I'm **Ricky Malstrom**, a mechatronics student turning ideas into physical things. This is my collection of builds, experiments, and what I learned making them.

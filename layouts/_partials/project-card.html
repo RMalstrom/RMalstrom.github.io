@@ -1,0 +1,7 @@
+<article class="project-card" data-category="{{ .Params.discipline | urlize }}">
+  <div class="project-card-top"><span class="eyebrow">{{ .Params.discipline | default "Project" }}</span><span class="card-mark" aria-hidden="true">{{ .Params.mark | default "↗" }}</span></div>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p>{{ .Description }}</p>
+  {{ partial "tech-chips.html" . }}
+  <div class="project-card-bottom"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time><a class="text-link" href="{{ .RelPermalink }}" aria-label="View {{ .Title }}">View project <span aria-hidden="true">↗</span></a></div>
+</article>

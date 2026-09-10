@@ -6,6 +6,8 @@ tags: ["3D printing", "hardware", "klipper", "engineering"]
 categories: ["Hardware"]
 tech: ["Klipper", "Orca Slicer", "Fusion 360"]
 external_url: "https://github.com/RMalstrom/ender7-upgrade"
+discipline: "3D printing"
+mark: "04"
 ---
 
 ## Objective

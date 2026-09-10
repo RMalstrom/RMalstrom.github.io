@@ -1,25 +1,41 @@
 {{ define "main" }}
-  {{/* Render the intro from content/_index.md */}}
-  {{ with .Content }}
-    <div class="index-content">
-      {{ . }}
+<div class="portfolio-home">
+  <section class="intro" aria-labelledby="intro-title">
+    <p class="eyebrow"><span class="status-dot"></span> Mechatronics / CAD / Embedded systems</p>
+    <h1 id="intro-title">Ideas take shape.<br><span>Then I make them work.</span></h1>
+    <div class="intro-bottom">
+      <div class="intro-copy">{{ .Content }}</div>
+      <a class="action primary" href="{{ "projects/" | relURL }}">Explore my work <span aria-hidden="true">↗</span></a>
     </div>
+  </section>
+  {{ with site.GetPage "/projects/elevatorProject" }}
+  <section class="spotlight" aria-labelledby="spotlight-title">
+    <div class="spotlight-copy">
+      <p class="eyebrow">01 / Featured build</p>
+      <p class="project-kicker">From CAD to control</p>
+      <h2 id="spotlight-title">{{ .Title }}</h2>
+      <p>An Arduino-powered elevator built from aluminum extrusions and 3D printed parts. Explore the assembly, the controls, and the working prototype.</p>
+      {{ partial "tech-chips.html" . }}
+      <a class="text-link" href="{{ .RelPermalink }}">Inside the build <span aria-hidden="true">→</span></a>
+    </div>
+    <a class="spotlight-image" href="{{ .RelPermalink }}" aria-label="Explore the Model Elevator Project">
+      <img src="{{ .Params.cover.image | relURL }}" alt="Exploded CAD assembly of the model elevator" width="1224" height="1584" fetchpriority="high">
+      <span class="image-caption">Assembly study <span>Interactive 3D model inside ↗</span></span>
+    </a>
+  </section>
   {{ end }}
-
-  {{ $projects := where .Site.RegularPages "Section" "projects" }}
-  {{ $featured := first 3 $projects.ByDate.Reverse }}
-
-  {{ if $featured }}
-    <section class="featured-projects">
-      <div class="section-heading">
-        <h2>Featured Projects</h2>
-        <a class="btn btn--outline" href="/projects/">View all projects&nbsp;→</a>
-      </div>
-      <div class="project-grid">
-        {{ range $featured }}
-          {{ partial "project-card.html" . }}
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
+  <section class="work-section" aria-labelledby="work-title">
+    <div class="section-heading"><div><p class="eyebrow">02 / More from the workbench</p><h2 id="work-title">Built. Tested. Documented.</h2></div><a class="text-link" href="{{ "projects/" | relURL }}">All projects <span aria-hidden="true">→</span></a></div>
+    <div class="project-grid">
+      {{ range where (where site.RegularPages "Section" "projects") "File.TranslationBaseName" "ne" "elevatorProject" }}
+      {{ partial "project-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+  <section class="workbench-note">
+    <div><p class="eyebrow">The person behind the projects</p><h2>Curious by default.<br>Hands-on by choice.</h2></div>
+    <div><p>I'm studying Mechatronics Engineering Technology at PennWest California. My work connects mechanical design, electronics, and code—with plenty of 3D printing along the way.</p><a class="text-link" href="{{ "about/" | relURL }}">A little more about me →</a></div>
+  </section>
+  <section class="contact-strip"><div><p class="eyebrow">Have something in mind?</p><h2>Let's talk about it.</h2></div><a class="action primary" href="mailto:maldev@proton.me">Get in touch <span aria-hidden="true">↗</span></a></section>
+</div>
 {{ end }}

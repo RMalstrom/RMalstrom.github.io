@@ -1,0 +1,4 @@
+<figure class="cad-viewer">
+  <model-viewer src="{{ .Get "src" | relURL }}" alt="{{ .Get "alt" }}" camera-controls touch-action="pan-y" shadow-intensity="1" loading="lazy" reveal="auto" interaction-prompt="auto"></model-viewer>
+  <figcaption>Drag to rotate · Scroll or pinch to zoom. <a href="{{ .Get "src" | relURL }}" download>Download the 3D model</a></figcaption>
+</figure>

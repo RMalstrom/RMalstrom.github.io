@@ -1,13 +1,11 @@
 {{ define "main" }}
-  {{ with .Content }}
-    <div class="index-content">
-      {{ . }}
-    </div>
-  {{ end }}
-
-  <div class="project-grid">
-    {{ range .Pages.ByDate.Reverse }}
-      {{ partial "project-card.html" . }}
-    {{ end }}
-  </div>
+<header class="portfolio-page-header"><p class="eyebrow">The workbench</p><h1>{{ .Title }}</h1><div class="page-intro">{{ .Content }}</div></header>
+<div class="project-filters" aria-label="Filter projects" hidden>
+  <button type="button" data-filter="all" aria-pressed="true">All projects</button>
+  {{ range slice "Controls" "Embedded systems" "CAD" "3D printing" }}<button type="button" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>{{ end }}
+  <span class="filter-count" role="status" aria-live="polite"></span>
+</div>
+<div class="project-grid project-grid-full">{{ range .RegularPages.ByDate.Reverse }}{{ partial "project-card.html" . }}{{ end }}</div>
+{{ $filters := resources.Get "js/project-filters.js" | minify | fingerprint }}
+<script src="{{ $filters.RelPermalink }}" integrity="{{ $filters.Data.Integrity }}" defer></script>
 {{ end }}

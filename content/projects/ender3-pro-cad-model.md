@@ -6,6 +6,9 @@ tags: ["3D printing", "Inventor", "CAD", "engineering"]
 categories: ["CAD"]
 tech: ["Autodesk Inventor"]
 external_url: "https://github.com/RMalstrom/Ender-3-Pro-Assembly"
+discipline: "CAD"
+mark: "03"
+model: true
 ---
 
 ## Objective
@@ -25,13 +28,7 @@ Demonstrate Inventor proficiency by modeling an accurate Ender 3 Pro.
 See on GitHub.
 
 ## Gallery
-<model-viewer src="/models/ender3ProFinalProjectModel.glb"
-              alt="Ender 3 Pro Final Project CAD Model"
-              camera-controls
-              auto-rotate
-              shadow-intensity="1"
-              style="width: 100%; max-width: 800px; height: 500px; margin: 1rem 0;">
-</model-viewer>
+{{< cad-model src="/models/ender3ProFinalProjectModel.glb" alt="Ender 3 Pro Final Project CAD Model" >}}
 
 ## Files & Source
 - **GitHub:** [RMalstrom/Ender-3-Pro-Assembly](https://github.com/RMalstrom/Ender-3-Pro-Assembly)
